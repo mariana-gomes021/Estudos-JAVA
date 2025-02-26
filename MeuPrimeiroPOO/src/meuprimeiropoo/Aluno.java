@@ -10,4 +10,23 @@ package meuprimeiropoo;
  */
 public class Aluno {
     
+    String nome;
+    double A1;
+    double A2;
+    double A3;
+    
+    public Aluno(){}
+    
+    public String perguntaNome(){
+    
+        return this.nome;
+        
+    }
+    
+    public void mudaNome(String nomeNovo){
+    
+        this.nome = nomeNovo;
+        
+    }
+    
 }
