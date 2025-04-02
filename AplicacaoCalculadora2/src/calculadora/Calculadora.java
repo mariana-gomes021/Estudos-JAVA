@@ -15,13 +15,12 @@ public class Calculadora {
     public Calculadora(){
         this.ultimoValor = 0;
     }
-    /*as váriaveis numero1 e numero2 são os que vão salvar os numeros da soma, o resto da soma é um número
-    inteiro*/
-    public int soma(int numero1, int numero2){
+    /*as váriaveis numero1 e numero2 são os que vão salvar os numeros da soma*/
+    public double soma(double numero1, double numero2){
         double resultado = numero1 + numero2;
         this.ultimoValor = resultado;
         
-        return (int)resultado;
+        return resultado;
     }
     
     public double subtrair(double numero1, double numero2){
@@ -33,11 +32,11 @@ public class Calculadora {
     
     /*resto da divisão só funciona com número inteiro*/
     
-    public double resto(double numero1, double numero2){
+    public int resto(int numero1, int numero2){
         double resultado = numero1%numero2;
         this.ultimoValor = resultado;
         
-        return resultado;
+        return (int)resultado;
     }
     
     public double ultimoResultado(){

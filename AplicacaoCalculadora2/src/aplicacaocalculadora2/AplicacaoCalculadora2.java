@@ -17,8 +17,9 @@ public class AplicacaoCalculadora2 {
     public static void main(String[] args) {
         
         Calculadora calc = new Calculadora();
-        calc.soma(3,20);
+        calc.soma(5,2);
         
+        System.out.println(calc.resto(5,2));
         System.out.println(calc.ultimoResultado());
     }
     
