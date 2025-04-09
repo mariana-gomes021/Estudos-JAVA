@@ -17,7 +17,7 @@ public class Notas {
     public Notas() {
     }
 
-    /*public boolean setA1(double nota) {
+    public boolean setA1(double nota) {
         if (nota >= 0 && nota <= 30) {
             this.A1 = nota;
             return true;
@@ -45,9 +45,9 @@ public class Notas {
             return false;
         }
         
-    }*/
+    }
     
-    public boolean salvaNota(double nota, int avaliacao){
+   /* public boolean salvaNota(double nota, int avaliacao){
         if (avaliacao == 1){
            if (nota>= 0 && nota <= 30){
                this.A1 = nota;
@@ -85,6 +85,39 @@ public class Notas {
         
         
     
-    }
+    }*/
 
+    public boolean salvaNota(double nota, int avaliacao){
+        if (avaliacao == 1){
+            return setA1(nota);
+        }else if (avaliacao == 2){
+            return setA2(nota);
+        }else if (avaliacao == 3){
+            return setA3(nota);
+        }else{
+            return false;
+        }
+    
+    }
+    
+    public double getA1(){
+        return this.A1;
+    
+    }
+    
+    public double getA2(){
+        return this.A2;
+    
+    }
+    
+    public double getA3(){
+        return this.A3;
+    
+    }
+    
+    public double notaFinal(){
+        return (this.A1 + this.A2 + this.A3);
+    
+    }
+    
 }
